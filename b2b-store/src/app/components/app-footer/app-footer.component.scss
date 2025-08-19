@@ -1,0 +1,5 @@
+.app-footer {
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
+  h3 { margin: 0 0 var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--gray-700); }
+  ion-item { --background: transparent; padding-left: 0; }
+}

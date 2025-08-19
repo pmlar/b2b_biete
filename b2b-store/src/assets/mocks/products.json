@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "categoryId": "hilos",
+    "title": "Algodón 100%",
+    "subtitle": "Cono 500g",
+    "price": 12.5,
+    "imageUrl": "/assets/icon/favicon.png",
+    "images": [
+      "/assets/icon/favicon.png"
+    ],
+    "description": "Hilo de algodón de alta calidad para uso industrial."
+  },
+  {
+    "id": "p2",
+    "categoryId": "hilos",
+    "title": "Poliéster Torzal",
+    "subtitle": "Bobina 1000m",
+    "price": 7.9,
+    "imageUrl": "/assets/icon/favicon.png",
+    "images": [
+      "/assets/icon/favicon.png"
+    ],
+    "description": "Poliéster de alta resistencia para confección."
+  }
+]
