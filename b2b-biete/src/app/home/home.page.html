@@ -1,0 +1,30 @@
+<app-header-toolbar title="Biete B2B"></app-header-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text color="medium"><h2 style="margin: var(--space-4) 0 var(--space-2);">Categorías</h2></ion-text>
+      </ion-col>
+      <ion-col size="6" sizeMd="3" *ngFor="let c of categories">
+        <app-category-card [category]="c" (selected)="goToCategory(c)"></app-category-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text color="medium"><h2 style="margin: var(--space-6) 0 var(--space-2);">Productos Destacados</h2></ion-text>
+      </ion-col>
+      <ion-col size="12">
+        <ion-slides pager="true" [options]="{ slidesPerView: 2.2, spaceBetween: 12 }">
+          <ion-slide *ngFor="let p of featured">
+            <div style="width: 100%; max-width: 240px;">
+              <app-product-card [product]="p" (addToCart)="addToCart(p)"></app-product-card>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<app-footer-tabs></app-footer-tabs>

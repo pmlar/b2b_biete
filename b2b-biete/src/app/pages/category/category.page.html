@@ -1,0 +1,25 @@
+<app-header-toolbar title="Categorías"></app-header-toolbar>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeMd="3">
+        <ion-list inset>
+          <ion-item *ngFor="let c of categories" [routerLink]="['/categories']" [queryParams]="{ id: c.id }">
+            <ion-label>{{ c.name }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="12" sizeMd="9">
+        <ion-row>
+          <ion-col size="6" sizeMd="4" sizeLg="3" *ngFor="let p of products">
+            <app-product-card [product]="p" (click)="openProduct(p)"></app-product-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<app-footer-tabs></app-footer-tabs>
+

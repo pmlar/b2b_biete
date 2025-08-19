@@ -1,0 +1,27 @@
+.product-card {
+	--padding-start: 0;
+	--padding-end: 0;
+	--inner-padding-end: 0;
+	--inner-padding-start: 0;
+	ion-img {
+		height: 180px;
+		object-fit: cover;
+	}
+	.name {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.2;
+		min-height: 2.4em;
+	}
+	.price-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 8px 0 12px;
+		.price {
+			font-weight: 700;
+			color: var(--color-price, var(--ion-color-primary));
+		}
+	}
+}
+
