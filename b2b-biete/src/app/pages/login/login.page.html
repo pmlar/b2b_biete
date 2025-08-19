@@ -1,0 +1,19 @@
+<app-header-toolbar title="Iniciar sesión"></app-header-toolbar>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="primary" style="margin: var(--space-4);" (click)="submit()">Entrar</ion-button>
+</ion-content>
+
+<app-footer-tabs></app-footer-tabs>
+

@@ -1,0 +1,16 @@
+<ion-card class="product-card">
+  <ion-img [src]="product?.imageUrl" [alt]="product?.name"></ion-img>
+  <ion-card-header>
+    <ion-card-title class="name">{{ product?.name }}</ion-card-title>
+    <ion-card-subtitle class="sku" *ngIf="product?.sku">SKU: {{ product?.sku }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <div class="price-row" *ngIf="showPrice">
+      <span class="price">{{ product?.price | currency:'EUR' }}</span>
+    </div>
+    <ion-button expand="block" size="small" color="primary" *ngIf="showAddToCart" (click)="onAddToCartClicked()">
+      Añadir al carrito
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+

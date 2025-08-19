@@ -1,0 +1,23 @@
+<app-header-toolbar title="Checkout"></app-header-toolbar>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item>
+      <ion-label position="stacked">Empresa</ion-label>
+      <ion-input [(ngModel)]="company"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">CIF/NIF</ion-label>
+      <ion-input [(ngModel)]="vat"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Dirección</ion-label>
+      <ion-textarea rows="4" [(ngModel)]="address"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="primary" style="margin: var(--space-4);" (click)="confirm()">Confirmar pedido</ion-button>
+</ion-content>
+
+<app-footer-tabs></app-footer-tabs>
+

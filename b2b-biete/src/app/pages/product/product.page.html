@@ -1,0 +1,24 @@
+<app-header-toolbar [title]="product?.name || 'Producto'"></app-header-toolbar>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeMd="6">
+        <ion-img [src]="product?.imageUrl" [alt]="product?.name"></ion-img>
+      </ion-col>
+      <ion-col size="12" sizeMd="6">
+        <h1>{{ product?.name }}</h1>
+        <p class="sku" *ngIf="product?.sku">SKU: {{ product?.sku }}</p>
+        <div class="price">{{ product?.price | currency:'EUR' }}</div>
+        <ion-item lines="none">
+          <ion-label position="stacked">Cantidad</ion-label>
+          <ion-input type="number" [(ngModel)]="quantity" min="1"></ion-input>
+        </ion-item>
+        <ion-button expand="block" color="primary" (click)="addToCart()">Añadir al carrito</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<app-footer-tabs></app-footer-tabs>
+

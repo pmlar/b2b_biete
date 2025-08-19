@@ -1,0 +1,7 @@
+{
+  "name": "b2b-biete",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
