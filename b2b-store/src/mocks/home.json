@@ -1,0 +1,13 @@
+{
+  "banners": [
+    { "imageUrl": "/assets/icon/favicon.png", "link": "/category" }
+  ],
+  "featuredCategories": [
+    { "id": "hilos", "name": "Hilos" },
+    { "id": "agujas", "name": "Agujas" }
+  ],
+  "featuredProducts": [
+    { "id": "p1", "title": "Algodón 100%", "subtitle": "Cono 500g", "price": 12.5, "imageUrl": "/assets/icon/favicon.png", "categoryId": "hilos" },
+    { "id": "p2", "title": "Poliéster Torzal", "subtitle": "Bobina 1000m", "price": 7.9, "imageUrl": "/assets/icon/favicon.png", "categoryId": "hilos" }
+  ]
+}

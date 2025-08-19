@@ -1,0 +1,31 @@
+<app-header></app-header>
+<ion-content>
+  <div class="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Checkout</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list lines="full">
+          <ion-item>
+            <ion-label position="stacked">Empresa</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Dirección</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Método de pago</ion-label>
+            <ion-select>
+              <ion-select-option value="transfer">Transferencia</ion-select-option>
+              <ion-select-option value="card">Tarjeta</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        <ion-button expand="block" color="dark">Confirmar pedido</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<app-footer></app-footer>

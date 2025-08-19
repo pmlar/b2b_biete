@@ -1,0 +1,29 @@
+<app-header></app-header>
+<ion-content>
+  <div class="container" *ngIf="home as h">
+    <div class="banners">
+      <ion-img *ngFor="let b of h.banners" [src]="b.imageUrl"></ion-img>
+    </div>
+
+    <h2>Categorías destacadas</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let c of h.featuredCategories">
+          <ion-card (click)="openCategory(c.id)">
+            <ion-card-content>{{ c.name }}</ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h2>Productos</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" sizeMd="3" *ngFor="let p of h.featuredProducts">
+          <app-product-card [title]="p.title" [subtitle]="p.subtitle" [price]="p.price" [imageUrl]="p.imageUrl"></app-product-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<app-footer></app-footer>

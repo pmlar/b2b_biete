@@ -1,0 +1,14 @@
+<ion-card class="product-card">
+  <ion-img [src]="imageUrl" [alt]="title" loading="lazy"></ion-img>
+  <ion-card-header>
+    <ion-card-title>{{ title }}</ion-card-title>
+    <ion-card-subtitle>{{ subtitle }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <div class="price-row">
+      <span class="price">{{ price | currency:EUR }}</span>
+      <ng-content select="app-quantity-stepper"></ng-content>
+    </div>
+    <ion-button fill="solid" color="dark" expand="block" size="small">Añadir</ion-button>
+  </ion-card-content>
+</ion-card>
